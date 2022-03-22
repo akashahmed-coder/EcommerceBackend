@@ -37,7 +37,7 @@ mongoose.connect(URI,{
 })
 
 app.get("/",(req,res)=>{
-    res.json({message:"hellow it is my home page"})
+    res.send({message:"hellow it is my home page"})
 })
 
 const PORT = process.env.PORT || 5000
